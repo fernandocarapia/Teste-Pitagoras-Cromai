@@ -10,7 +10,6 @@ export default function Calculator() {
     const [resultado, setResultado] = useState('');
     const [area, setArea] = useState('');
 
-
     const handleInputChange = (e) => {
         const target = e.target;
 
@@ -27,7 +26,6 @@ export default function Calculator() {
         }
     };
 
-
     const calculate = (e) => {
         e.preventDefault();
         if (catetoA > 0 && catetoO > 0 && (hipotenusa == null || hipotenusa == 0)) { // Calcula Hipotenusa
@@ -37,30 +35,38 @@ export default function Calculator() {
             setResultado(`Hipotenusa = ${h.toFixed(2)}`);
             setArea(`Sua area é  de ${area.toFixed(2)}`);
 
-        } else if (hipotenusa > 0 && catetoO > 0 && (catetoA == null || catetoA == 0)) { // Calcula Cateto Adjacente
-            const cA = Math.sqrt((Math.pow(hipotenusa, 2) - Math.pow(catetoO, 2)))
-            const area = cA * catetoO / 2;
-            setCatetoA(cA)
-            setResultado(`Cateto Adjacente = ${cA.toFixed(2)}`)
-            setArea(`Sua area é de ${area.toFixed(2)}`)
+        } else if (hipotenusa > catetoA && hipotenusa > catetoO) {
 
-        } else if (hipotenusa > 0 && catetoA > 0 && (catetoO == null || catetoO == 0)) { // Calcula Cateto Oposto
-            const cO = Math.sqrt((Math.pow(hipotenusa, 2) - Math.pow(catetoA, 2)))
-            const area = catetoA * cO / 2;
-            setCatetoB(cO)
-            setResultado(`Cateto Oposto = ${cO.toFixed(2)}`)
-            setArea(`Sua area é de ${area.toFixed(2)}`)
+            if (hipotenusa > 0 && catetoO > 0 && (catetoA == null || catetoA == 0)) { // Calcula Cateto Adjacente
+                const cA = Math.sqrt((Math.pow(hipotenusa, 2) - Math.pow(catetoO, 2)))
+                const area = cA * catetoO / 2;
+                setCatetoA(cA)
+                setResultado(`Cateto Adjacente = ${cA.toFixed(2)}`)
+                setArea(`Sua area é de ${area.toFixed(2)}`)
 
+            } else if (hipotenusa > 0 && catetoA > 0 && (catetoO == null || catetoO == 0)) { // Calcula Cateto Oposto
+                const cO = Math.sqrt((Math.pow(hipotenusa, 2) - Math.pow(catetoA, 2)))
+                const area = catetoA * cO / 2;
+                setCatetoB(cO)
+                setResultado(`Cateto Oposto = ${cO.toFixed(2)}`)
+                setArea(`Sua area é de ${area.toFixed(2)}`)
+
+            } else {
+                setResultado(`Você precisa digitar 2 valores`)
+            }
         } else {
-            setResultado(`Você precisa digitar 2 valores`)
-
+            setResultado('Hipotenusa tem que ser maior que os Catetos')
         }
-
     };
 
 
-
-
+    const clean = () => {
+        setCatetoA('');
+        setCatetoB('');
+        setHipotenusa('');
+        setArea('');
+        setResultado('');
+    }
 
     return (
         <div className="template">
@@ -79,10 +85,11 @@ export default function Calculator() {
 
                 <label>
                     Hipotenusa
-                    <input type="number" name="hipotenusa" onChange={handleInputChange} value={hipotenusa} />
+                    <input type="number" name="hipotenusa" onChange={handleInputChange} value={hipotenusa} min='0' />
                 </label>
 
                 <button onClick={calculate}>Calcular</button>
+                <button onClick={clean}>Limpar</button>
 
 
             </form>
@@ -93,8 +100,6 @@ export default function Calculator() {
             <span>
                 {area}
             </span>
-
-
         </div>
 
     );
