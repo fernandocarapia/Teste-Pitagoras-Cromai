@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Calculator.css";
 
 export default function Calculator() {
-
-    //const [formValues, setFormValue] = useState({});
+    
     const [catetoA, setCatetoA] = useState('');
     const [catetoO, setCatetoB] = useState('');
     const [hipotenusa, setHipotenusa] = useState('');
@@ -60,7 +59,6 @@ export default function Calculator() {
         }
     };
 
-
     const clean = (c) => {
         c.preventDefault();
 
@@ -74,27 +72,21 @@ export default function Calculator() {
     return (
         <div className="template">
             <p>Calculadora de Pitágoras</p>
-
             <form >
                 <label>
                     Cateto Adjacente
                     <input type="number" name='catetoA' onChange={handleInputChange} value={catetoA} />
                 </label>
-
                 <label>
                     Cateto Oposto
                     <input type="number" name="catetoO" onChange={handleInputChange} value={catetoO} />
                 </label>
-
                 <label>
                     Hipotenusa
                     <input type="number" name="hipotenusa" onChange={handleInputChange} value={hipotenusa} min='0' />
                 </label>
-
                 <button onClick={calculate}>Calcular</button>
                 <button onClick={clean}>Limpar</button>
-
-
             </form>
 
             <span>
@@ -104,6 +96,5 @@ export default function Calculator() {
                 {area}
             </span>
         </div>
-
     );
 }
