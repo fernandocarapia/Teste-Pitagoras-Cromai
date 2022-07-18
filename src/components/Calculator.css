@@ -1,0 +1,64 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-image: url(img/Doctor-Who-The-Tardis.jpg);
+    background-repeat: no-repeat;
+
+  }
+    
+  input {
+  
+    border-radius: 2em;
+    margin: 1em;
+    text-align: end;
+    box-shadow: 1px 1px .2em whitesmoke, 1px 1px .6em #731d9696;
+    
+  
+  }
+  
+  label {
+    
+    font-size: 17pt;
+    padding: auto;
+    display: flow-root;
+    text-align: right;
+  
+  }
+  
+  button {
+  
+    border-radius: 2em;
+    margin: 1em;
+    text-align: justify;
+    box-shadow: 1px 1px .2em whitesmoke, 1px 1px .6em #731d9696;
+    background-color: #c56ee798;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 10pt;
+    padding: 1em;
+    text-transform: uppercase;
+    
+  }
+
+  span{
+    display: flow-root;
+    
+    
+  }
+  
+  .template {
+    margin: 2ch;
+    background-color: #0000009c;
+    box-shadow: 1px 1px .2em whitesmoke, 1px 1px .6em #731d9696;
+    padding: 12pt;
+    border-radius: 1em;
+  
+  }
