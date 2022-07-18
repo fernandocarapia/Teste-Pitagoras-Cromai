@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Teste Calculadora de Pitagoras @ Cromai
+
+***Olá Viajante, tudo bem?***
+
+
+**Conversei com Pitágoras e deu tudo certo, apresentei esta calculadora e disse as maravilhas que conquistamos a partir desta tecnologia, ele adorou!**
+
+**Viajamos nessa nave emprestada do meu grande amigo Doutor, a Tardis é uma belezinha para essas tarefas!!**
+
+**Este projeto foi realizado com o framework REACT**
+
+**Para criação do projeto terá instruções logo abaixo**
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +80,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+***Vou ser #CROMAI***
