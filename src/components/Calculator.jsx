@@ -36,6 +36,7 @@ export default function Calculator() {
             setArea(`Sua area é  de ${area.toFixed(2)}`);
 
         } else if (hipotenusa > catetoA && hipotenusa > catetoO) {
+            
 
             if (hipotenusa > 0 && catetoO > 0 && (catetoA == null || catetoA == 0)) { // Calcula Cateto Adjacente
                 const cA = Math.sqrt((Math.pow(hipotenusa, 2) - Math.pow(catetoO, 2)))
@@ -60,7 +61,9 @@ export default function Calculator() {
     };
 
 
-    const clean = () => {
+    const clean = (c) => {
+        c.preventDefault();
+
         setCatetoA('');
         setCatetoB('');
         setHipotenusa('');

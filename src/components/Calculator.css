@@ -37,7 +37,7 @@ body {
   
     border-radius: 2em;
     margin: 1em;
-    text-align: justify;
+    text-align: center;
     box-shadow: 1px 1px .2em whitesmoke, 1px 1px .6em #731d9696;
     background-color: #c56ee798;
     color: whitesmoke;
@@ -45,11 +45,17 @@ body {
     font-size: 10pt;
     padding: 1em;
     text-transform: uppercase;
+    width: 9em;
+    
     
   }
 
   span{
     display: flow-root;
+    max-width: 10cm;
+    text-align: center;
+
+    
     
     
   }
