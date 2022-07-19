@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Teste-Pitagoras-Cromai/static/css/main.a762c37a.css",
+    "main.js": "/Teste-Pitagoras-Cromai/static/js/main.d54eec39.js",
+    "static/js/787.0e2b584f.chunk.js": "/Teste-Pitagoras-Cromai/static/js/787.0e2b584f.chunk.js",
+    "static/media/Doctor-Who-The-Tardis.jpg": "/Teste-Pitagoras-Cromai/static/media/Doctor-Who-The-Tardis.3d956bf4a9ac621e9517.jpg",
+    "static/media/logo.svg": "/Teste-Pitagoras-Cromai/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Teste-Pitagoras-Cromai/index.html",
+    "main.a762c37a.css.map": "/Teste-Pitagoras-Cromai/static/css/main.a762c37a.css.map",
+    "main.d54eec39.js.map": "/Teste-Pitagoras-Cromai/static/js/main.d54eec39.js.map",
+    "787.0e2b584f.chunk.js.map": "/Teste-Pitagoras-Cromai/static/js/787.0e2b584f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a762c37a.css",
+    "static/js/main.d54eec39.js"
+  ]
+}
