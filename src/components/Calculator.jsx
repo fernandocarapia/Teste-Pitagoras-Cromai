@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Calculator.css";
 
 export default function Calculator() {
-    
+
     const [catetoA, setCatetoA] = useState('');
     const [catetoO, setCatetoB] = useState('');
     const [hipotenusa, setHipotenusa] = useState('');
@@ -35,7 +35,7 @@ export default function Calculator() {
             setArea(`Sua area é  de ${area.toFixed(2)}`);
 
         } else if (hipotenusa > catetoA && hipotenusa > catetoO) {
-            
+
 
             if (hipotenusa > 0 && catetoO > 0 && (catetoA == null || catetoA == 0)) { // Calcula Cateto Adjacente
                 const cA = Math.sqrt((Math.pow(hipotenusa, 2) - Math.pow(catetoO, 2)))
